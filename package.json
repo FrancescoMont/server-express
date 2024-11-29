@@ -2,11 +2,11 @@
   "name": "test-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node ./dist/index.js",
-    "start:nodemon": "nodemon ./src/index.ts",
+    "start": "npm run build && node ./dist/app.js",
+    "start:nodemon": "nodemon ./src/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,7 +15,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "match-fake-data": "^1.0.1",
+    "match-fake-data": "^2.0.1",
     "nodemon": "^3.1.7",
     "ts-node": "^10.9.2",
     "uuid": "^11.0.3"

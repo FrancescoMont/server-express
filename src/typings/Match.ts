@@ -1,4 +1,3 @@
-import { Player } from "./Player";
 
 export type Match = {
   author: number;
@@ -9,7 +8,7 @@ export type Match = {
   address: string;
   difficulty: number;
   playerAvailable: number;
-  playersAttended: Player[];
-  playersIn: Player[];
+  pendingPlayers: number[];
+  playersIn: number[];
   id: number;
 };

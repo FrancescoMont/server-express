@@ -1,8 +1,7 @@
 import { Match } from "../../typings/Match";
 import { v4 } from "uuid";
 import { Request, Response } from "express";
-const { getUser } = require("match-fake-data");
-const { getMatch } = require("match-fake-data");
+import { getMatch, getUser } from "match-fake-data";
 
 const match: Match[] = getMatch();
 const user = getUser();
@@ -21,6 +20,5 @@ export const createMatch = (req: Request, res: Response) => {
 export const getMatches = (req: Request, res: Response): any => {
   return res.send(match);
 };
-
 
 export default { createMatch, getMatches };
